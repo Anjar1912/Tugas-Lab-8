@@ -7,12 +7,13 @@ using Tugas_Lab_8.ClassInduk;
 
 namespace Tugas_Lab_8.ClassAnak
 {
-    class PegawaiTetap : Pegawai
+    public class Leader : Pegawai
     {
-        public double GajiBulanan { get; set; }
+        public int JumlahPenjualan { get; set; }
+        public int Komisi { get; set; }
         public override double Gaji()
         {
-            return GajiBulanan;
+            return JumlahPenjualan * Komisi;
         }
     }
 }

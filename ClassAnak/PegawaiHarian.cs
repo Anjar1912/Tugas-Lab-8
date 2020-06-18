@@ -7,12 +7,14 @@ using Tugas_Lab_8.ClassInduk;
 
 namespace Tugas_Lab_8.ClassAnak
 {
-    class PegawaiTetap : Pegawai
+    public class PegawaiHarian : Pegawai
     {
-        public double GajiBulanan { get; set; }
+        public int JumlahJamKeja { get; set; }
+        public int UpahPerJam { get; set; }
         public override double Gaji()
         {
-            return GajiBulanan;
+            return JumlahJamKeja * UpahPerJam;
         }
+
     }
 }
